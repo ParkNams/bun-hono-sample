@@ -32,4 +32,16 @@ echo 'export PATH="$HOME/.bun-tools/zig:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
 ```
 
+## Hono Project Create
+```shell
+bun create hono
+```
+
+## Bun dependency Install
+```shell
+bun install
+```
+
+<br>
+
 [bun.js 공식문서](https://bun.sh/)
