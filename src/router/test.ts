@@ -1,9 +1,9 @@
 import { Context, Hono } from "hono";
 
-const testRoute = new Hono();
+const testRouter = new Hono();
 
-testRoute.get("/a1", (c: Context) => {
+testRouter.get("/a1", (c: Context) => {
     return c.json({ message: "hi" });
 })
 
-export default testRoute 
+export default testRouter

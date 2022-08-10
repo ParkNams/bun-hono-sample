@@ -1,6 +1,6 @@
 import { Context, Hono, Next } from "hono";
 import { cors } from 'hono/cors';
-import testRoute from "./router/test" 
+import testRouter from "./router/test" 
 const app = new Hono();
 
 const port = parseInt(process.env.PORT) || 80;
@@ -16,7 +16,7 @@ app.get("/", (c: Context) => {
   return c.json({ message: "Hello World!" });
 });
 
-app.route('/test', testRoute);
+app.route('/test', testRouter);
 
 app.onError((err: Error, c: Context) => {
   console.log(err)
